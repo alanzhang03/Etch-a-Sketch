@@ -1,4 +1,7 @@
-const testing = document.createElement("p");
-testing.textContent="hi my name is alan!";
+const gridContainer = document.querySelector("#grid-container");
 
-document.body.appendChild(testing);
+const squareDiv = document.createElement("div");
+
+squareDiv.textContent = "Hi I am just testing!";
+
+gridContainer.appendChild(squareDiv);
