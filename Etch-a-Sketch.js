@@ -1,7 +1,12 @@
 const gridContainer = document.querySelector("#grid-container");
+const totalGrids = 16 * 16; 
 
-const squareDiv = document.createElement("div");
+for(let i = 0; i < totalGrids; i++){
+    const square = document.createElement("div");
+    square.classList.add("grid-item");
+    gridContainer.appendChild(square);
+}
 
-squareDiv.textContent = "Hi I am just testing!";
 
-gridContainer.appendChild(squareDiv);
+
+
