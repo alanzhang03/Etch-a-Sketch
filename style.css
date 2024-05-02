@@ -19,14 +19,16 @@ html, body{
     height: 100%;
     max-width: 50%;
     flex-wrap: wrap;
+    padding-left: 25%;
+    padding-right: 25%;
     
 }
 
 
 .grid-item{
     background-color: aqua;
-    width: 100px;
-    height: 100px;
-    justify-content: center; /* Centers children along the main axis (horizontally) */
-    align-items: center; /* Centers children along the cross axis (vertically) */
+    width: 10px;
+    height: 10px;
+    justify-content: center; 
+    align-items: center; 
 }
