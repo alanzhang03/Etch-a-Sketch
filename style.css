@@ -22,8 +22,8 @@ html, body{
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    width: 1600px;
-    height: 1600px
+    width: 50vw;
+    height: 50vh;
     
 }
 
@@ -31,8 +31,8 @@ html, body{
 .grid-item{
     display: flex;
     background-color: aqua;
-    width: 100px;
-    height: 100px;
+    width: 5px;
+    height: 5px;
     justify-content: center; 
     align-items: center; 
     border: solid black 2px;

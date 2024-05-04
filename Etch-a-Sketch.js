@@ -7,6 +7,4 @@ for(let i = 0; i < totalGrids; i++){
     gridContainer.appendChild(square);
 }
 
-console.add("testing")
-
 
