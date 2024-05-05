@@ -1,10 +1,13 @@
 const gridContainer = document.querySelector("#grid-container");
-const totalGrids = 16 * 16; 
+const totalRows = 16;
+const totalCols = 16;
 
-for(let i = 0; i < totalGrids; i++){
-    const square = document.createElement("div");
-    square.classList.add("grid-item");
-    gridContainer.appendChild(square);
+for(let row=0; i < totalRows; row++){
+    for(let col=0; j < totalCols; col++){
+        let grid = document.createElement("div");
+        grid.classList.add("grid-item");
+        gridContainer.appendChild(grid);
+    }
+
 }
-
 
