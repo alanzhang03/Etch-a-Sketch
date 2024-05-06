@@ -1,19 +1,24 @@
 const gridContainer = document.querySelector("#grid-container");
-const buttons = document.querySelector('.buttons');
+const buttons = document.querySelector('#buttons-container');
 
 for(let i = 0; i < 256; i++){
-    gridItem = document.createElement("grid-item");
-    girdItem.className = 'grid-item';
-    gridContainer.appendChild(gridItem);
+    grids = document.createElement("grid-item");
+    grids.className = 'grid-item';
+    gridContainer.appendChild(grids);
 }
 
 const clearButton = document.createElement("button");
 clearButton.className = 'buttons';
-clearButton.textContent = "clear button";
+clearButton.textContent = "clear button!";
 buttons.appendChild(clearButton);
 
 
 const colorPickingButton = document.createElement("button");
 colorPickingButton.className = "buttons";
-colorPickingButton.className = "clear button";
+colorPickingButton.textContent = "pick button!";
 buttons.appendChild(colorPickingButton);
+
+const eraseButton = document.createElement("button");
+eraseButton.className = "buttons";
+eraseButton.textContent = "Erase button!";
+buttons.appendChild(eraseButton);
