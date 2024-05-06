@@ -7,3 +7,13 @@ for(let i = 0; i < 256; i++){
     gridContainer.appendChild(gridItem);
 }
 
+const clearButton = document.createElement("button");
+clearButton.className = 'buttons';
+clearButton.textContent = "clear button";
+buttons.appendChild(clearButton);
+
+
+const colorPickingButton = document.createElement("button");
+colorPickingButton.className = "buttons";
+colorPickingButton.className = "clear button";
+buttons.appendChild(colorPickingButton);
