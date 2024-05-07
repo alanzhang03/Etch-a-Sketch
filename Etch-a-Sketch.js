@@ -53,3 +53,5 @@ const eraseButton = document.createElement("button");
 eraseButton.className = "buttons";
 eraseButton.textContent = "Erase button!";
 buttons.appendChild(eraseButton);
+
+const pixelSize = document.getElementById('pixelSize')
