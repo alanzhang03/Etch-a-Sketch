@@ -8,18 +8,13 @@ function buildGridItems(){
         grids = document.createElement("div");
         grids.className = 'grid-item';
         gridContainer.appendChild(grids);
-
         grids.addEventListener('mouseover', function(){
             if(isDrawing){
                 this.style.backgroundColor = currentColor;
             }
         });
-
-
-
     }
 }
-
 buildGridItems();
 
 gridContainer.addEventListener('click', function(){
