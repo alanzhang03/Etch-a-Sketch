@@ -1,6 +1,7 @@
 const gridContainer = document.querySelector("#grid-container");
 const buttons = document.querySelector('#buttons-container');
 let currentColor = '#000000';
+let isDrawing = false;
 
 function buildGridItems(){
     for(let i = 0; i < 256; i++){
@@ -9,13 +10,21 @@ function buildGridItems(){
         gridContainer.appendChild(grids);
 
         grids.addEventListener('mouseover', function(){
-            this.style.backgroundColor = currentColor;
+            if(isDrawing){
+                this.style.backgroundColor = currentColor;
+            }
         });
+
+
 
     }
 }
 
 buildGridItems();
+
+gridContainer.addEventListener('click', function(){
+    isDrawing = !isDrawing;
+})
 
 const colorPickingButton = document.createElement("input");
 colorPickingButton.textContent = "Color: ";
