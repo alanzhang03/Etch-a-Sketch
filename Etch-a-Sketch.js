@@ -1,6 +1,6 @@
 const gridContainer = document.querySelector("#grid-container");
 const buttons = document.querySelector('#buttons-container');
-let currentColor = '#000000';
+let currentColor = 'white';
 let isDrawing = false;
 
 function buildGridItems(){
@@ -25,7 +25,7 @@ const colorPickingButton = document.createElement("input");
 colorPickingButton.textContent = "Color: ";
 colorPickingButton.type = "color";
 colorPickingButton.id = "colorPicker";
-colorPickingButton.value = "#000000";
+colorPickingButton.value = "white";
 colorPickingButton.className = "buttons";
 
 buttons.appendChild(colorPickingButton);
