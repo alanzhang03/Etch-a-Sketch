@@ -52,6 +52,14 @@ clearButton.addEventListener("click", function(){
 const eraseButton = document.createElement("button");
 eraseButton.className = "buttons";
 eraseButton.textContent = "Erase button!";
+
+eraseButton.addEventListener("click", function(){
+    
+})
+
+
 buttons.appendChild(eraseButton);
+
+
 
 const pixelSize = document.getElementById('pixelSize')
