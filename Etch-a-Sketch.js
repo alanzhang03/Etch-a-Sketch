@@ -18,7 +18,7 @@ function buildGridItems(){
 buildGridItems();
 
 function eraseItem(){
-    grids.addEventListener('mouseover' function(){
+    grids.addEventListener('mouseover', function(){
         if(isDrawing){
             this.style.backgroundColor = 'white';
         }
