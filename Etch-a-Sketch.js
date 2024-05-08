@@ -17,12 +17,8 @@ function buildGridItems(){
 }
 buildGridItems();
 
-function eraseItem(){
-    grids.addEventListener('mouseover', function(){
-        if(isDrawing){
-            this.style.backgroundColor = 'white';
-        }
-    })
+function setEraseMode(){
+    currentColor = 'white';
 }
 
 gridContainer.addEventListener('click', function(){
@@ -60,13 +56,11 @@ clearButton.addEventListener("click", function(){
 const eraseButton = document.createElement("button");
 eraseButton.className = "buttons";
 eraseButton.textContent = "Erase button!";
-
-eraseButton.addEventListener("click", function(){
-
-})
-
-
 buttons.appendChild(eraseButton);
+
+eraseButton.addEventListener("click", setEraseMode)
+
+
 
 
 
