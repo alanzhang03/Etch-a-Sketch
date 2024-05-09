@@ -62,6 +62,3 @@ eraseButton.addEventListener("click", setEraseMode)
 
 
 
-
-
-const pixelSize = document.getElementById('pixelSize')
