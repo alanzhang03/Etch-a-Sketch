@@ -21,6 +21,10 @@ function setEraseMode(){
     currentColor = 'white';
 }
 
+function setBlackMode(){
+    currentColor = 'black';
+}
+
 gridContainer.addEventListener('click', function(){
     isDrawing = !isDrawing;
 })
@@ -31,14 +35,20 @@ colorPickingButton.type = "color";
 colorPickingButton.id = "colorPicker";
 colorPickingButton.value = "white";
 colorPickingButton.className = "buttons";
-
-
 buttons.appendChild(colorPickingButton);
-
 colorPickingButton.addEventListener("input", function(){
     console.log("Color chosen:", this.value);
     currentColor = this.value;
 })
+
+const blackButton = document.createElement("button");
+blackButton.className = "buttons";
+blackButton.textContent = "Black";
+blackButton.className += " button-style";
+blackButton.addEventListener('click', setBlackMode);
+buttons.appendChild(blackButton);
+
+
 
 
 const clearButton = document.createElement("button");
@@ -46,7 +56,6 @@ clearButton.className = 'buttons';
 clearButton.textContent = "Clear Button!";
 clearButton.className += " button-style";
 buttons.appendChild(clearButton);
-
 clearButton.addEventListener("click", function(){
     while (gridContainer.firstChild) {
         gridContainer.removeChild(gridContainer.firstChild);
@@ -59,9 +68,6 @@ const eraseButton = document.createElement("button");
 eraseButton.className = "buttons";
 eraseButton.textContent = "Erase Button!";
 eraseButton.className += " button-style";
-
-
-
 buttons.appendChild(eraseButton);
 eraseButton.addEventListener("click", setEraseMode)
 
