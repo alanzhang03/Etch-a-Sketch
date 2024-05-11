@@ -43,7 +43,7 @@ colorPickingButton.addEventListener("input", function(){
 
 const clearButton = document.createElement("button");
 clearButton.className = 'buttons';
-clearButton.textContent = "clear button!";
+clearButton.textContent = "Clear Button!";
 clearButton.className += " button-style";
 buttons.appendChild(clearButton);
 
@@ -57,7 +57,7 @@ clearButton.addEventListener("click", function(){
 
 const eraseButton = document.createElement("button");
 eraseButton.className = "buttons";
-eraseButton.textContent = "Erase button!";
+eraseButton.textContent = "Erase Button!";
 eraseButton.className += " button-style";
 
 
