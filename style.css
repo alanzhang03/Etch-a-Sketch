@@ -1,5 +1,4 @@
 html, body{
-    height: 1000vh;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -11,10 +10,10 @@ html, body{
 
 #docHeader{
     text-align: center;
-    font-size: 50px;
-    padding-top: 12vh;
-    margin: 4vh;
+    font-size: 75px;
+    padding-top: 4vh;
     color: white;
+    font-weight: bolder;
 }
 
 #grid-container {
@@ -46,4 +45,10 @@ html, body{
     margin: 15px;
 }
 
+.button-style {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
 

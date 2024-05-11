@@ -32,6 +32,7 @@ colorPickingButton.id = "colorPicker";
 colorPickingButton.value = "white";
 colorPickingButton.className = "buttons";
 
+
 buttons.appendChild(colorPickingButton);
 
 colorPickingButton.addEventListener("input", function(){
@@ -43,6 +44,7 @@ colorPickingButton.addEventListener("input", function(){
 const clearButton = document.createElement("button");
 clearButton.className = 'buttons';
 clearButton.textContent = "clear button!";
+clearButton.className += " button-style";
 buttons.appendChild(clearButton);
 
 clearButton.addEventListener("click", function(){
@@ -56,8 +58,11 @@ clearButton.addEventListener("click", function(){
 const eraseButton = document.createElement("button");
 eraseButton.className = "buttons";
 eraseButton.textContent = "Erase button!";
-buttons.appendChild(eraseButton);
+eraseButton.className += " button-style";
 
+
+
+buttons.appendChild(eraseButton);
 eraseButton.addEventListener("click", setEraseMode)
 
 
