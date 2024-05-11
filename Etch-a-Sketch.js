@@ -2,15 +2,20 @@ const gridContainer = document.querySelector("#grid-container");
 const buttons = document.querySelector('#buttons-container');
 let currentColor = 'white';
 let isDrawing = false;
+let useRainbow = false;
 
 function buildGridItems(){
     for(let i = 0; i < 256; i++){
-        grids = document.createElement("div");
+        let grids = document.createElement("div");
         grids.className = 'grid-item';
         gridContainer.appendChild(grids);
         grids.addEventListener('mouseover', function(){
             if(isDrawing){
-                this.style.backgroundColor = currentColor;
+                if (useRainbow) {
+                    this.style.backgroundColor = setRainbow();  
+                } else {
+                    this.style.backgroundColor = currentColor;
+                }
             }
         });
     }
@@ -19,10 +24,20 @@ buildGridItems();
 
 function setEraseMode(){
     currentColor = 'white';
+    useRainbow = false;
 }
 
 function setBlackMode(){
     currentColor = 'black';
+    useRainbow = false;
+}
+
+function setRainbow() {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    useRainbow = true;
+    return `rgb(${red}, ${green}, ${blue})`;
 }
 
 gridContainer.addEventListener('click', function(){
@@ -39,6 +54,7 @@ buttons.appendChild(colorPickingButton);
 colorPickingButton.addEventListener("input", function(){
     console.log("Color chosen:", this.value);
     currentColor = this.value;
+    useRainbow = false;
 })
 
 const blackButton = document.createElement("button");
@@ -48,7 +64,12 @@ blackButton.className += " button-style";
 blackButton.addEventListener('click', setBlackMode);
 buttons.appendChild(blackButton);
 
-
+const rainbowButton = document.createElement("button");
+rainbowButton.className = "buttons";
+rainbowButton.textContent = "RGB";
+rainbowButton.className += " button-style";
+buttons.appendChild(rainbowButton);
+rainbowButton.addEventListener('click', setRainbow);
 
 
 const clearButton = document.createElement("button");
