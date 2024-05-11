@@ -52,7 +52,6 @@ colorPickingButton.value = "white";
 colorPickingButton.className = "buttons";
 buttons.appendChild(colorPickingButton);
 colorPickingButton.addEventListener("input", function(){
-    console.log("Color chosen:", this.value);
     currentColor = this.value;
     useRainbow = false;
 })
