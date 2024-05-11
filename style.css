@@ -19,10 +19,10 @@ html, body{
 
 #grid-container {
     display: grid;
-    grid-template-columns: repeat(16, 40px);
-    grid-template-rows: repeat(16, 40px);
-    width: 640px;  
-    height: 640px;  
+    grid-template-columns: repeat(16, 45px);
+    grid-template-rows: repeat(16, 45px);
+    width: 720px;  
+    height: 720px;  
     border: 5px solid black;  
 }
 
@@ -39,7 +39,7 @@ html, body{
 }
 
 .buttons{
-    background-color: white;
+    background-color: grey;
     width: 100px;
     height: 50px;
     border-radius: 5%;
