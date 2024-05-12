@@ -22,7 +22,8 @@ html, body{
     grid-template-rows: repeat(16, 45px);
     width: 720px;  
     height: 720px;  
-    border: 5px solid black;  
+    border: 5px solid black; 
+    margin-bottom: 5vh;
 }
 
 #buttons-container{
