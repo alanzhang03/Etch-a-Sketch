@@ -10,7 +10,3 @@ The Etch-A-Sketch App is a fun, interactive drawing application inspired by the 
 - **Interactive Grid**: Draw on a 16x16 grid by hovering the mouse, click to start or stop drawing.
 - **Color Picker**: Select any color using the color picker tool for custom drawing.
 - **Responsive Design**: Suitable for both desktop and mobile users.
-
-## Installation
-
-To set up the Etch-A-Sketch App on your local machine, follow these steps:
